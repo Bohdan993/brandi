@@ -1,0 +1,71 @@
+.facts__layer {
+    .fPa(75%, 75%, 75px, 75px, 576px, 1600px);
+    background: url('../img/night-city-cityscape-building-scenery-digital-art-930@0@f-preview.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    position: relative;
+
+    & > * {
+        position: relative;
+        z-index: 3;
+    }
+
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        z-index: 2;
+        background-color: rgba(@dark, 0.75);
+    }
+}
+
+.facts__title {
+    margin-bottom: 95px;
+}
+
+.facts__wrapper {
+    .card {
+        background-color: @transparent;
+        border:  0;
+        color: @white;
+    }
+
+    .card-title {
+        .fSize(64vw, 64px * (768/1360), 64px, 768px, 1360px);
+        font-weight: 700;
+    }
+}
+
+
+.facts__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .ico {
+        width: 35px;
+        height: 35px;
+        position: relative;
+        margin-bottom: 25px;
+
+        &:before {
+            content: '';
+            width: 275%;
+            height: 275%;
+            border-radius: 50%;
+            border: 1px solid @white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        svg {
+            width: 35px;
+            height: 35px;
+            fill: @white;
+        }
+    }
+}

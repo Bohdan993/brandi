@@ -1,0 +1,36 @@
+.facts
+    .facts__layer
+        .container
+            h2.title_h2.main-color.text-center.text-uppercase.facts__title
+                strong
+                    |Some fun facts
+
+            .facts__wrapper.d-flex.jusfity-between.align-center
+                .card.facts__card(style='width: 18rem;')
+                    i.ico
+                        +svg2('clock')
+                    .card-body.text-center
+                        h5.card-title(data-count="3200") 0
+                        p.card-text.text-uppercase
+                            |Hours of work
+                .card.facts__card(style='width: 18rem;')
+                    i.ico
+                        +svg2('clients')
+                    .card-body.text-center
+                        h5.card-title(data-count="120") 0
+                        p.card-text.text-uppercase
+                            |Satisfied clients
+                .card.facts__card(style='width: 18rem;')
+                    i.ico
+                        +svg2('rocket')
+                    .card-body.text-center
+                        h5.card-title(data-count="360") 0
+                        p.card-text.text-uppercase
+                            |Projects deployed
+                .card.facts__card(style='width: 18rem;')
+                    i.ico
+                        +svg2('awward')
+                    .card-body.text-center
+                        h5.card-title(data-count="42") 0
+                        p.card-text.text-uppercase
+                            |Awwards reached

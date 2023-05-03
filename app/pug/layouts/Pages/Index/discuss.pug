@@ -1,0 +1,41 @@
+.discuss
+    .discuss__layer
+        .container
+            h2.title_h2.main-color.text-center.text-uppercase.discuss__title
+                strong
+                    |Let's discuss
+            p.subtitle.text-center.discuss__subtitle
+                |Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore iste neque maxime sit sunt perspiciatis excepturi eligendi dolorum, similique facere cum, asperiores quo illo deleniti eos. Sequi enim neque impedit.
+            .discuss__form-wrapper.d-flex.justify-between
+                .discuss__info.discuss__section
+                    h4.mb-5
+                        |Lorem ipsum dolor sit!
+                    p(style="font-size: 14px")
+                        |Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus dolorem, nisi temporibus delectus voluptate distinctio magni excepturi voluptas quasi voluptatum?
+                form.discuss__form.discuss__section
+                    fieldset
+                        legend.m-0.p-0.mb-4(style="line-height: 29px")
+                            strong
+                                |Say hello!
+                        .row.mb-5
+                            .col
+                                input.form-control.text-left(type='text' placeholder='Name')
+                            .col
+                                input.form-control.text-left(type='email' placeholder='Email')
+                        .row.mb-5
+                            .col
+                                input.form-control.text-left(type='text' placeholder='Comment')
+                        button.btn.main-btn(type='submit') Submit
+                ul.discuss__social-list.discuss__section
+                    li.discuss__social-list-item
+                        a.discuss__social-link(href="#") 
+                            i.ico
+                                +svg2('facebook')
+                    li.discuss__social-list-item
+                        a.discuss__social-link(href="#") 
+                            i.ico
+                                +svg2('youtube')
+                    li.discuss__social-list-item
+                        a.discuss__social-link(href="#") 
+                            i.ico
+                                +svg2('instagram')

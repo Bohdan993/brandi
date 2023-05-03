@@ -1,0 +1,229 @@
+.dropdown__list-item {
+    width: 100%;
+
+
+    &.open {
+        & > .dropdown__text-content > .dropdown__list-item-name-wrapper > .dropdown__ico {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+
+.dropdown__list-item_first {
+    
+
+    & > .dropdown__text-content {
+        background-color: @main-color;
+    }
+
+
+    margin-bottom: 30px;
+    
+}
+
+.dropdown__list-item_second {
+    & > .dropdown__text-content {
+        background-image: linear-gradient(to right, #28374D, #3C3E47);
+        display: flex;
+        justify-content: space-between;
+
+
+        & > .dropdown__list-item-name-wrapper {
+            flex-basis: (862/1400) * 100%;
+        }
+    }
+
+
+    &.open {
+        & > .dropdown__text-content {
+            & > .dropdown__list-item-name-wrapper + .dropdown__parameters {
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+    }
+
+
+}
+
+.dropdown__list-item_third {
+    & > .dropdown__text-content {
+        background-image: linear-gradient(to right, rgba(40, 55, 77, 0.7), rgba(60, 62, 71, 0.7));
+        padding: 9.5px 25px;
+    } 
+
+    .dropdown__list-item-name-wrapper {
+        flex-basis: (862/1400) * 100%;
+    }
+
+}
+
+.dropdown__list-item-name-wrapper {
+    display: flex;
+}
+
+.dropdown__list-item_total {
+    & > .dropdown__text-content {
+        padding: 15px 25px;
+    }
+}
+
+.dropdown__text-content {
+    display: flex;
+    align-items: baseline;
+    padding: 15px 25px;
+    border-radius: 7px;
+    border: 1px solid @main-color;
+
+    &.clickable {
+        cursor: pointer;
+    }
+}
+
+.dropdown__list-item-name {
+    color: @white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22/18;
+    letter-spacing: 0;
+    text-align: left;
+
+}
+
+
+.dropdown__ico {
+    width: 10px;
+    height: 10px;
+    margin-right: 7px;
+    transition: transform 0.25s linear;
+    svg {
+        width: 10px;
+        height: 10px;
+        fill: @white;
+    }
+}
+
+.dropdown__input-wrapper {
+    flex-basis: (100%/3);
+    // &:not(:last-child) {
+    //     padding-right: 25px;
+    // }
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+.dropdown__inputs {
+    display: flex;
+    flex-basis: ((1400 - 862)/1400) * 100%;
+}
+
+.dropdown__input {
+    width: 100%;
+    max-width: 100px;
+    padding: ((31px - 16px) / 2) 15px;
+    text-align: left;
+}
+
+.dropdown__label {
+    color: @white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22/18;
+    letter-spacing: 0;
+    text-align: left;
+
+}
+
+.dropdown__total {
+    display: flex;
+    color: @white;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.dropdown__total-text {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22/18;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.dropdown__total-curency {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22/18;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+
+.dropdown__total-value {
+    display: block;
+    // width: 100%;
+    min-width: 50px;
+    padding: 0 5px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22/18;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+
+.dropdown__parameters {
+    display: flex;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22/18;
+    letter-spacing: 0;
+    text-align: center;
+    color: @white;
+    flex-basis: ((1400 - 862)/1400) * 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s linear opacity;
+    // flex-basis: 50%;
+}
+
+
+.dropdown__parameter {
+    flex-basis: (100%/3);
+
+    // &:first-child {
+    //     text-align: left;
+    // }
+
+
+    &:last-child {
+        text-align: right;
+    }
+}
+
+
+.dropdown__results {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown__button {
+    .main-btn__text {
+        text-transform: initial;
+    }
+    
+}
+
+.dropdown__total-result {
+    justify-content: space-between;
+    cursor: auto;
+
+    &:hover {
+        background: linear-gradient(90deg, #4C6072 0%, #746E67 100%);
+    }
+}

@@ -1,0 +1,74 @@
+footer.footer#contacts
+	.footer__layer
+		.container.d-flex.justify-between.align-center
+				.footer__info.footer__section
+					.footer__logo.logo
+						a.logo__link.footer__logo-link(href="#")
+							img.footer__logo-img.logo__img(src="img/logo.png", alt="Logo")
+					p.footer__description
+						|Copyright 2021 © brandi.com. As a visual communications company, we recognise, and are inspired by, the rich traditions of storytelling in the First Nations cultures of Australia.
+					ul.footer__payments-list
+						li.footer__payments-list-item
+							img.footer__master-card(src="img/MasterCard.png" alt="MasterCard")
+						li.footer__payments-list-item
+							img.footer__visa(src="img/Visa.png" alt="Visa")
+				.footer__sections.footer__section
+					h3.footer__sections-title.footer-title
+						|Get in touch
+					form.form-inline
+						.form-group.mb-2.w-100
+							input#inputEmail2.form-control.text-left.w-100(type='email' placeholder='Email')
+						button.btn.btn-light.w-100(type='submit') Submit
+				.footer__documentation.footer__section
+					h3.footer__documentation-title.footer-title
+						|Menu
+					ul.footer__documentation-list.footer__list
+						li.footer__documentation-list-item.footer-list-item
+							a.footer-link(href="#home") 
+								|Home
+						li.footer__documentation-list-item.footer-list-item
+							a.footer-link(href="#features") 
+								|Features
+						li.footer__documentation-list-item.footer-list-item
+							a.footer-link(href="#works") 
+								|Works
+						li.footer__documentation-list-item.footer-list-item
+							a.footer-link(href="#team") 
+								|Our Team
+						li.footer__documentation-list-item.footer-list-item
+							a.footer-link(href="#contacts") 
+								|Contacts
+				.footer__contacts.footer__section
+					h3.footer__contacts-title.footer-title
+						|Contacts
+					ul.footer__contacts-list.footer__list
+						li.footer__contacts-list-item
+							i.ico
+								+svg2('mail')
+							a.footer__mail-link.footer-link(href="mailto:info@brandi.com")
+								|info@brandi.com
+						li.footer__contacts-list-item
+							i.ico
+								+svg2('marker')
+							p.footer__address-text
+								|Melbourne, Victoria, Australia
+						li.footer__contacts-list-item
+							i.ico
+								+svg2('phone')
+							a.footer__phone-link.footer-link(href="tel:+12233445577")
+								|+12233445577
+						li.footer__contacts-list-item.footer__contacts-list-item_social
+							ul.footer__social-list
+								li.footer__social-list-item
+									a.footer__social-link(href="#") 
+										i.ico
+											+svg2('facebook')
+								li.footer__social-list-item
+									a.footer__social-link(href="#") 
+										i.ico
+											+svg2('youtube')
+								li.footer__social-list-item
+									a.footer__social-link(href="#") 
+										i.ico
+											+svg2('instagram')
+

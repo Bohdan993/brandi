@@ -1,0 +1,72 @@
+.discuss__layer {
+    .fPa(75%, 75%, 75px, 75px, 576px, 1600px);
+}
+
+.discuss__title {
+    margin-bottom: 35px;
+}
+
+.discuss__subtitle {
+    margin-bottom: 45px;
+}
+
+.discuss__info {
+    flex-basis: 30%;
+}
+
+.discuss__form {
+    flex-basis: 55%;
+
+    input {
+        border: 0;
+        border-bottom: 2px solid @gray6;
+        border-radius: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        &:focus {
+            border: 0;
+            box-shadow: unset;
+            border-bottom: 2px solid @main-color;
+        }
+    }
+}
+
+.discuss__social-list {
+    flex-basis: 15%;
+}
+
+.discuss__section {
+    padding: 0 10px;
+}
+
+.discuss__form-wrapper {
+    margin: 0 -10px;
+}
+
+.discuss__social-list-item {
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.discuss__social-link {
+
+
+    .ico {
+        width: 25px;
+        height: 25px;
+        svg {
+            width: 25px;
+            height: 25px;
+            fill: @gray4;
+            transition: fill 0.25s ease;
+        }
+    }
+
+    &:hover {
+        svg {
+            fill: @main-color;
+        }
+    }
+}

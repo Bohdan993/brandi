@@ -1,0 +1,65 @@
+.features__layer {
+    background-color: rgba(@main-color, 0.1);
+    .fPa(75%, 75%, 75px, 75px, 576px, 1600px);
+}
+
+.features__carousel {
+    padding: 35px 0;
+
+    .carousel-indicators {
+        bottom: -15px;
+        li {
+            width: 8px;
+            height: 8px;
+            background-color: @dark2;
+            border-radius: 50%;
+        }
+    }
+
+    .carousel-item {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+}
+
+
+
+.features__card {
+    background-color: @transparent;
+    border: unset;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+
+    .card-body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .ico {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        &:before {
+            content: '';
+            width: 150%;
+            height: 150%;
+            border-radius: 50%;
+            border: 2px solid @main-color;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        svg {
+            width: 25px;
+            height: 25px;
+            fill: @main-color;
+        }
+    }
+}
